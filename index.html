@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Carrilho | Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <header class="header">
+        <div class="logo">&lt;/LCM&gt;</div>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#habilidades">Habilidades</a> </li>
+                <li><a href="#projetos">Ferramentas</a></li>
+                <li><a href="#projetos">Meus projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="home" class="hero">
+                <h1>Leonardo Carrilho Macedo</h1>
+                <p>Sou estudante de programação pela ETEC/Fatec.</p>
+                <a href="https://drive.google.com/file/d/1v94e_32nEjf-mQyFNcthb1OyVHXGxh7T/view?usp=sharing" id="downloadCV" class="cv-download">Baixar Currículo</a>
+            </section>
+
+            <hr>
+
+            <section id="habilidades">
+                <br>
+                <h1>Minhas Habilidades</h1>
+                <br>
+<br>
+            
+                <div class="tabs">
+    <button class="tab-button" onclick="showTab('frontend')">Front-end</button>
+    <button class="tab-button" onclick="showTab('backend')">Back-end</button>
+</div>
+
+<div class="tab-container">
+    <div id="frontend" class="tab-content active">
+        <h2>Front-end</h2>
+        <img class="img_front" src="html-5_732212.png" alt="HTML">
+        <img class="img_front" src="css-3_732190.png" alt="CSS">
+        <img class="img_front" src="js_5968292.png" alt="JavaScript">
+    </div>
+    
+    <div id="backend" class="tab-content">
+        <h2>Back-end</h2>
+        <img class="img_front" src="c-sharp.png" alt="C#">
+        <img class="img_front" src="python.png" alt="Python">
+    </div>
+</div>
+
+<script>
+    function showTab(tabName) {
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.getElementById(tabName).classList.add('active');
+    }
+</script>
+
+               
+            </section>
+<br>
+<hr>
+
+            <section id="ferramentas" class="ferramentas_t">
+                <br>
+                <h1>Ferramentas que ultilizo</h1>
+              <br><br>
+                <div class="ferramenta">
+                
+                    <h2>Visual Studio Code</h2>
+            
+                    <img class="img_f" src="icons8-vs-code-144.png" alt="">
+                   
+                </div>
+                <br>
+                <p class="texto_f">É uma otima ferramenta quando se pensa em usar linguagens de programação e marcação variadas</p> 
+                <br><br><br>
+                    <div class="ferramenta">
+                       
+                        <h2>Visual Studio 2022</h2>
+                        <img class="img_f" src="visual_studio.png" alt="">
+                    </div>
+                    <br>
+                     <p>Ferramenta boa e robusta, especialmente para quem trabalha com .NET, C#, C++ e desenvolvimento full-stack.</p> 
+                    <br><br><br>
+                    <div class="ferramenta">
+                        <h2>Adobe Photoshop</h2>
+                    <img class="img_f" src="photoshop.png" alt="">
+                    </div>
+                    <p> O Photoshop é uma ferramenta interessante. Quando há uma familiarização, é possível fazer muita coisa</p> 
+                    <br><br><br>
+                    <div class="ferramenta">
+                        <h2>GitHub</h2>
+                        <br>
+                    <img class="img_f" src="icons8-git-144.png" alt="">
+                    </div>
+                      <p>GitHub é uma boa plataforma para armazenar e gerenciar código, facilitando colaboração e controle de versões.</p>
+                    
+            </section>
+<br><br><br>
+            <hr>
+
+            <section id="projetos" class="projects">
+                <h1>Meus Projetos</h1>
+                <br>
+                <a href=""></a><div class="project">
+                    <h3>Sistema de Venda e Compra de Passagem de Ônibus</h3>
+                    <p>Criado em C#, visa a venda de passagens de um Ônibus.</p>
+                </div>
+                <div class="project">
+                    <h3>Site de clínica veterinária</h3>
+                    <p>O site foi criado no intuito escolar para aprimorar nossas habilidades, desenvolvemos o site em um grupo de seis pessoas</p>
+                </div>
+                <div class="project">
+                    <h3>Automação de Dados</h3>
+                    <p>O sistema foi criado usando a linguagem Python, ultilizando a biblioteca Pandas, Pyautogui e Times</p>
+                </div>
+            </section>
+
+            <section id="contato" class="contact">
+                <h2>Entre em Contato</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/Leo-Carrilho">GitHub</a>
+                    <a href="https://linkedin.com">LinkedIn</a>
+                    <a href="https://mail.google.com/mail/l/0/?hl=pt-BR#inbox?compose=new">Email</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2025 Leonardo Carrilho Macedo | Estudante Full-Stack
+        </footer>
+    </div>
+
+    <script>
+        // Efeito de digitação no título
+        const title = document.querySelector('.hero h1');
+        const text = title.textContent;
+        title.textContent = '';
+
+        function typeWriter(element, text, index = 0) {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(() => typeWriter(element, text, index), 100);
+            }
+        }
+
+        typeWriter(title, text);
+
+        // Função para download do currículo
+        document.getElementById('downloadCV').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Use a relative path from your project's root
+        const pdfUrl = 'C:/Users/045849/Downloads/Portf-lio.v2/Portf-lio-main/Curriculo_2.pdf';
+        
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'curriculo_leonardo_carrilho.pdf';
+        
+        // Simulate click to download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+         // visual de download
+         const downloadBtn = e.target;
+            downloadBtn.textContent = 'Baixando...';
+            setTimeout(() => {
+                downloadBtn.textContent = 'Baixar Currículo';
+            }, 2000);
+    });
+
+           
+
+
+        // header fixo
+        const header = document.querySelector('.header');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > window.innerHeight * 0.5) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+
+        // Rolagem suave para seções
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+       
+    </script>
+</body>
+</html>
